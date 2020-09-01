@@ -82,5 +82,5 @@ module.exports = async function(context) {
 	fs.writeFileSync(pkg.name, wrapperScript);
 	await exec("chmod", ["+x", pkg.name]);
 
-	chdir(originalDir);
+	chdir(originalDir );
 };
